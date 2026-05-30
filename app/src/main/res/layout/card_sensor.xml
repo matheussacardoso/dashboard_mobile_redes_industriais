@@ -1,0 +1,54 @@
+<!-- res/layout/card_sensor.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvSensorNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor"
+            android:textSize="13sp"
+            android:textColor="#555"/>
+
+        <TextView
+            android:id="@+id/tvSensorValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:paddingTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSensorUnidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unidade"
+            android:textSize="12sp"
+            android:textColor="#777"/>
+
+        <TextView
+            android:id="@+id/tvTopico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tópico"
+            android:textSize="9sp"
+            android:textColor="#999"
+            android:paddingTop="4dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
